@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Leaves View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="LeavesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ziK-kJ-pkT"/>
+                        <viewControllerLayoutGuide type="bottom" id="L9d-Rd-2CH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3MZ-qr-FuP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siu-Bf-XY7">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-nR-rlz" customClass="LeavesView">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6z8-xn-zs5">
+                                                <rect key="frame" x="8" y="8" width="64" height="30"/>
+                                                <state key="normal" title="miniature">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showThumbnails:" destination="2" eventType="touchUpInside" id="fjf-HL-Sbq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="DmP-ag-cWc" appends="YES" id="38e-gz-QN5"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="EdM-3E-UY8"/>
+                                </connections>
+                            </scrollView>
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRb-bf-svh">
+                                <rect key="frame" x="0.0" y="872" width="768" height="107"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jwY-4M-eC4"/>
+                    <connections>
+                        <outlet property="leavesView" destination="cbT-nR-rlz" id="GrT-rr-38H"/>
+                        <outlet property="scroller" destination="siu-Bf-XY7" id="c3J-4x-yin"/>
+                        <outlet property="thumbScroller" destination="uRb-bf-svh" id="FIM-2b-IYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DmP-ag-cWc">
+                    <connections>
+                        <action selector="handlePanGesture:" destination="cbT-nR-rlz" id="nlL-rX-v6E"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="836" y="-143"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leaves View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="LeavesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gAR-R7-dU2"/>
+                        <viewControllerLayoutGuide type="bottom" id="a1R-WK-ldT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLx-ih-NOF">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEE-0e-2sx" customClass="LeavesView">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CFH-kn-n7k" appends="YES" id="K83-Dw-nNU"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mEE-0e-2sx" firstAttribute="top" secondItem="FLx-ih-NOF" secondAttribute="top" id="DXW-61-gny"/>
+                                    <constraint firstItem="mEE-0e-2sx" firstAttribute="centerX" secondItem="FLx-ih-NOF" secondAttribute="centerX" id="G0H-R9-oGo"/>
+                                    <constraint firstItem="mEE-0e-2sx" firstAttribute="centerY" secondItem="FLx-ih-NOF" secondAttribute="centerY" id="VcH-oh-Ifw"/>
+                                    <constraint firstAttribute="trailing" secondItem="mEE-0e-2sx" secondAttribute="trailing" id="YER-P7-bpG"/>
+                                    <constraint firstItem="mEE-0e-2sx" firstAttribute="leading" secondItem="FLx-ih-NOF" secondAttribute="leading" id="wjs-pk-0IU"/>
+                                    <constraint firstAttribute="bottom" secondItem="mEE-0e-2sx" secondAttribute="bottom" id="y4g-6S-T4n"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Yhg-uG-4Qi"/>
+                                </connections>
+                            </scrollView>
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r47-Wi-nOq">
+                                <rect key="frame" x="0.0" y="220" width="480" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ANF-Ir-XV7"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt1-Kq-0mO">
+                                <rect key="frame" x="10" y="28" width="64" height="30"/>
+                                <state key="normal" title="miniature">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showThumbnails:" destination="2" eventType="touchUpInside" id="TV2-zK-nqD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a1R-WK-ldT" firstAttribute="top" secondItem="r47-Wi-nOq" secondAttribute="bottom" id="24o-b3-2VZ"/>
+                            <constraint firstItem="Lt1-Kq-0mO" firstAttribute="leading" secondItem="3" secondAttribute="leadingMargin" constant="-6" id="5zF-Hh-KIq"/>
+                            <constraint firstItem="r47-Wi-nOq" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="81n-Lc-a4r"/>
+                            <constraint firstItem="r47-Wi-nOq" firstAttribute="leading" secondItem="FLx-ih-NOF" secondAttribute="leading" id="Hw4-cT-jbq"/>
+                            <constraint firstItem="FLx-ih-NOF" firstAttribute="top" secondItem="3" secondAttribute="top" id="Tup-Z1-Glc"/>
+                            <constraint firstItem="a1R-WK-ldT" firstAttribute="top" secondItem="FLx-ih-NOF" secondAttribute="bottom" constant="44" id="eK3-a4-nGj"/>
+                            <constraint firstAttribute="trailing" secondItem="FLx-ih-NOF" secondAttribute="trailing" id="eWP-Lb-8XL"/>
+                            <constraint firstItem="Lt1-Kq-0mO" firstAttribute="top" secondItem="gAR-R7-dU2" secondAttribute="bottom" constant="8" symbolic="YES" id="oM9-ZI-p2e"/>
+                            <constraint firstItem="r47-Wi-nOq" firstAttribute="trailing" secondItem="FLx-ih-NOF" secondAttribute="trailing" id="wQh-bk-dBU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfT-iZ-VVB"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="leavesView" destination="mEE-0e-2sx" id="49E-F8-TRe"/>
+                        <outlet property="scroller" destination="FLx-ih-NOF" id="DXH-oD-WdY"/>
+                        <outlet property="thumbScroller" destination="r47-Wi-nOq" id="WFU-dr-9Qv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="CFH-kn-n7k">
+                    <connections>
+                        <action selector="handlePanGesture:" destination="mEE-0e-2sx" id="axe-mx-1VZ"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="485" y="296"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

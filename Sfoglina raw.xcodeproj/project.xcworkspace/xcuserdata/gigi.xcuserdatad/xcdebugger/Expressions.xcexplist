@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[NoteTableViewController tableView:commitEditingStyle:forRowAtIndexPath:]:NoteTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LeavesView touchesBegan:withEvent:]:LeavesView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "spineBottom">
+            </PersistentString>
+            <PersistentString
+               value = "spineTop">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LeavesView layoutSubviews]:LeavesView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentOrientation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LeavesView recalcVertical]:LeavesView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentPageIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LeavesView redrawVertical]:LeavesView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "basso">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LeavesView turnPageFwd]:LeavesView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentPageIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[LeavesView goToPage:]:LeavesView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentPageIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NotesViewController alertView:didDismissWithButtonIndex:]:NotesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "alertView.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
