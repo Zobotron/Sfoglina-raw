@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>175DDC66-55C8-46AB-98E1-A45BBC3AAEE7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Sfoglina raw</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59A9D48C5AC2B19DDB09AD39E96A387F5887C994</key>
+		<string>https://github.com/Zobotron/Sfoglina-raw.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sfoglina raw.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59A9D48C5AC2B19DDB09AD39E96A387F5887C994</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Zobotron/Sfoglina-raw.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59A9D48C5AC2B19DDB09AD39E96A387F5887C994</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59A9D48C5AC2B19DDB09AD39E96A387F5887C994</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Sfoglina%20raw</string>
+		</dict>
+	</array>
+</dict>
+</plist>
