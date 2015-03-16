@@ -53,6 +53,9 @@
                             </button>
                             <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRb-bf-svh">
                                 <rect key="frame" x="0.0" y="872" width="768" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="xLc-1F-xqG"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -65,7 +68,6 @@
                             <constraint firstItem="L9d-Rd-2CH" firstAttribute="top" secondItem="siu-Bf-XY7" secondAttribute="bottom" constant="44" id="koJ-mO-Pjs"/>
                             <constraint firstItem="siu-Bf-XY7" firstAttribute="leading" secondItem="3MZ-qr-FuP" secondAttribute="leading" id="krH-OO-HYt"/>
                             <constraint firstItem="6z8-xn-zs5" firstAttribute="leading" secondItem="3MZ-qr-FuP" secondAttribute="leadingMargin" constant="-2" id="pYW-uP-prT"/>
-                            <constraint firstItem="uRb-bf-svh" firstAttribute="top" secondItem="3MZ-qr-FuP" secondAttribute="top" constant="872" id="vkW-nE-yVY"/>
                             <constraint firstItem="siu-Bf-XY7" firstAttribute="top" secondItem="3MZ-qr-FuP" secondAttribute="top" id="ybd-uF-vGY"/>
                         </constraints>
                     </view>
