@@ -1,7 +1,7 @@
 # Sfoglina-raw
 Effetto page curl (così lo capiscono tutti) per iOS
 
-Come prima cosa ringrazio il bravissimo Tom Brown per avermi dato lo spunto per realizzare questa mini applicazione,
+Come prima cosa ringrazio il bravissimo Tom Brow per avermi dato lo spunto per realizzare questa mini applicazione,
 trovate qui il suo progetto:
 
 https://github.com/brow/leaves
